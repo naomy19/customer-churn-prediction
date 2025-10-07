@@ -106,6 +106,7 @@ Here’s the ROC curve for the optimized Random Forest model:
 
 - **Top Features Impacting Churn:**
 ![Feature Importance](images/shap_feature_importance.png)
+![Feature Importance](images/shap_feature_importance_2.png)
 
 
 Example feature importance (SHAP):
