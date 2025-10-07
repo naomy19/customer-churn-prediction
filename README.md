@@ -6,7 +6,9 @@ This project explores the data, builds a churn prediction model, tunes hyperpara
 ---
 
 ## 📌 Project Overview
-Customer churn is a major concern for subscription-based businesses. In this project, we:
+Customer churn is a major concern for subscription-based businesses. 
+![Churn Distribution](images/churn_distribution.png)
+In this project, we:
 - Analyze customer behavior and service usage.
 - Build and evaluate a **Random Forest model** to predict churn.
 - Interpret model results using **SHAP** & **LIME**.
@@ -97,12 +99,14 @@ python churn_model.py
 
 - **Initial Model Recall:** ~84%  
 - **Optimized Model Recall (after GridSearch):** ~83% (slightly lower but more stable with cross-validation)
+
+### 📊 Model Evaluation
+Here’s the ROC curve for the optimized Random Forest model:
+![ROC Curve](images/roc_curve.png)
+
 - **Top Features Impacting Churn:**
-  - `remaining_contract`
-  - `has_contract`
-  - `download_avg`
-  - `is_tv_subscriber`
-  - `is_movie_package_subscriber`
+![Feature Importance](images/shap_feature_importance.png)
+
 
 Example feature importance (SHAP):
 
@@ -149,4 +153,4 @@ has_contract        ↓
 
 ## 👩‍💻 Author
 **Camilla Naomy Tsuda**  
-Higher Diploma in Data Analytics – City Colleges  
+Higher Diploma in Data Analytics  
